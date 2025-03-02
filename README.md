@@ -10,12 +10,12 @@ It is a dummy SSR application.
 | Pinia     | 3.0.1   |
 
 ## Features
-* User can see the list & details of a product.
-* In details section, user can see the variant of a product by selecting the available variant option.
-* It can be filtered by category and colors.
-* Product search option available.
-* Multilingual support for products.
-* SEO & Meta has been added in product details.
+* Users can browse a list of products and view detailed information about each item.
+* On the product details page, users can explore different variants by selecting available options.
+* Products can be filtered by category and color for a more refined search experience.
+* A search functionality is available to help users quickly find products.
+* Multilingual support ensures product details are accessible in multiple languages.
+* SEO optimization and meta tags have been implemented for better search engine visibility on product detail pages.
 
 ## Setup
 
