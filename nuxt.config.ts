@@ -74,10 +74,10 @@ export default defineNuxtConfig({
 
   modules: [
     '@pinia/nuxt',
-    // '@nuxt/image'
+    '@nuxt/image'
   ],
   pinia: {
     storesDirs: ['./stores/**'],
-  }
-  // image: {}
+  },
+  image: {}
 })

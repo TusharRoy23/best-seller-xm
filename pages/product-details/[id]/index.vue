@@ -7,7 +7,7 @@
                     <div class="carousel-inner border">
                         <div class="carousel-item" :class="index === 0 ? 'active' : ''"
                             v-for="(image, index) in product?.images" :key="index">
-                            <img class="w-100 h-100" :src="image" alt="Image">
+                            <NuxtImg class="w-100 h-100" :src="image" alt="Image" placeholder />
                         </div>
                     </div>
                     <template v-if="product?.images && product?.images?.length > 1">

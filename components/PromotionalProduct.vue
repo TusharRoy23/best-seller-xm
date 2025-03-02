@@ -1,6 +1,6 @@
 <template>
     <div :class="containerClass">
-        <img class="w-100" :src="imageUrl" :alt="altText" />
+        <NuxtImg class="w-100" :src="imageUrl" :alt="altText" placeholder />
     </div>
 </template>
 <script lang="ts" setup>
