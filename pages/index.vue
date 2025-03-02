@@ -14,17 +14,12 @@
                             </button>
                         </div>
                     </div>
-                    <!-- <ClientOnly> -->
-                        <template v-for="item in productsWithPromotions">
-                            <div class="col-lg-4 col-md-6 col-sm-12 pb-1" v-if="isProduct(item)">
-                                <Product :product="item" :key="item.id" />
-                            </div>
-                            <PromotionalProduct v-else-if="isPromotionalSpot(item)" :promotionalSpot="item" />
-                        </template>
-                        <!-- <template #fallback>
-                            <p>Loading...</p>
-                        </template> -->
-                    <!-- </ClientOnly> -->
+                    <template v-for="item in productsWithPromotions">
+                        <div class="col-lg-4 col-md-6 col-sm-12 pb-1" v-if="isProduct(item)">
+                            <Product :product="item" :key="item.id" />
+                        </div>
+                        <PromotionalProduct v-else-if="isPromotionalSpot(item)" :promotionalSpot="item" />
+                    </template>
                 </div>
             </div>
             <!-- Shop Product End -->

@@ -99,8 +99,27 @@ watchEffect(() => {
                 images: ['/img/no-image.jpg']
             }
         }
+
+        useHead({
+            title: `${useLocalizedName(product.value, 'name').value} | Commerce`,
+            meta: [
+                { name: 'description', content: 'Default product description' },
+                { property: 'og:title', content: `${useLocalizedName(product.value, 'name').value} | Commerce` },
+                { property: 'og:description', content: 'Default product description' },
+                { property: 'og:image', content: product.value?.images?.[0] || '/img/no-image.jpg' },
+                { property: 'og:type', content: 'product' }
+            ]
+        });
     }
 })
+
+useServerSeoMeta({
+  title: computed(() => product.value ? `${useLocalizedName(product.value, 'name').value} | Commerce` : 'Commerce'),
+  description: computed(() => 'Product details'),
+  ogTitle: computed(() => product.value ? `${useLocalizedName(product.value, 'name').value} | Commerce` : 'Commerce'),
+  ogDescription: computed(() => 'Product Details'),
+  ogImage: computed(() => product.value?.images?.[0] || '/img/no-image.jpg'),
+});
 
 function onVariantSelect(variant: Variant) {
     if (product.value) {
