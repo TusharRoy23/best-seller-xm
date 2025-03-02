@@ -1,6 +1,21 @@
-# Nuxt Minimal Starter
+# Dummy E-commerce
+It is a dummy SSR application.
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+## Packages
+| Name      | version |
+| ----------|---------|
+| Vue       | latest  |
+| Vue Router| latest  |
+| Nuxt      | 3.15.4  |
+| Pinia     | 3.0.1   |
+
+## Features
+* User can see the list & details of a product.
+* In details section, user can see the variant of a product by selecting the available variant option.
+* It can be filtered by category and colors.
+* Product search option available.
+* Multilingual support for products.
+* SEO & Meta has been added in product details.
 
 ## Setup
 
