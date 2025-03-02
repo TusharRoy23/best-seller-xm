@@ -1,9 +1,11 @@
 <template>
     <div class="card product-item border-0 mb-4">
         <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
-            <NuxtImg class="img-fluid w-100" v-if="product?.images" :src="product?.images[0]" alt="Product Image"
-                 placeholder quality="30" />
-            <img v-else class="img-fluid w-100" src="/img/no-image.jpg" />
+            <NuxtLink :to="'/product-details/' + product?.id">
+                <NuxtImg class="img-fluid w-100" v-if="product?.images" :src="product?.images[0]" alt="Product Image"
+                     placeholder quality="30" />
+                <img v-else class="img-fluid w-100" src="/img/no-image.jpg" />
+            </NuxtLink>
         </div>
         <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
             <h6 class="text-truncate mb-3">

@@ -22,25 +22,32 @@
                 </ClientOnly>
             </div>
             <div class="col-lg-6 col-6 text-left">
-                <form action="">
-                    <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Search for products">
-                        <div class="input-group-append">
-                            <span class="input-group-text bg-transparent text-primary">
-                                <i class="fa fa-search"></i>
-                            </span>
-                        </div>
+                <div class="input-group">
+                    <input type="text" v-model="searchQuery" @keyup.enter="searchProduct" class="form-control" placeholder="Search for products">
+                    <div class="input-group-append">
+                        <span class="input-group-text bg-transparent text-primary">
+                            <i class="fa fa-search"></i>
+                        </span>
                     </div>
-                </form>
+                </div>
             </div>
         </div>
     </div>
     <!-- Topbar End -->
 </template>
 <script lang="ts" setup>
+    const router = useRouter();
     const languageList: Array<{ name: string, code: string }> = [
         { name: 'EN', code: 'en' },
         { name: 'DK', code: 'dk' }
     ];
+    const searchQuery = ref();
+
+    const searchProduct = () => {
+        router.push({
+            path: '/',
+            query: { search: searchQuery.value.trim() }
+        })
+    }
 
 </script>

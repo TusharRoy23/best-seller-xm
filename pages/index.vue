@@ -36,6 +36,7 @@ const router = useRouter();
 const { data: products } = useApiFetch<Product[]>(() => {
     let query = route.query.category ? `?category=${route.query.category}` : '';
     query += route.query.colors ? `?colors=${route.query.colors}` : '';
+    query += route.query.search ? `?search=${route.query.search}` : '';
     return `/api/products${query}`;
 })
 
