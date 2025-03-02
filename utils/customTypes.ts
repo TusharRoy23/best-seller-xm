@@ -48,6 +48,11 @@ export type Category = {
     categories: Category[]
 }
 
+export type ColorFilter = {
+    color: string;
+    count: number;
+}
+
 export function isProduct(item: any): item is Product {
     return item?.item_type === "product";
 }

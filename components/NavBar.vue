@@ -45,5 +45,7 @@
     <!-- Navbar End -->
 </template>
 <script setup lang="ts">
-const { data: category } = useFetch('/api/category');
+import { useApiFetch } from '~/helper/helper';
+
+const { data: category } = useApiFetch<Category>('/api/category');
 </script>

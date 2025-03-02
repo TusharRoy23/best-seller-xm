@@ -5,7 +5,7 @@
             "brand": "Vero Moda",
             "price": 299.95,
             "stock": 10,
-            "color": "",
+            "color": "Grey",
             "size": [
                 "XS",
                 "S",
@@ -14,7 +14,7 @@
             ],
             "name": {
                 "dk": "CABLE O-NECK KNITTED PULLOVER",
-                "en": ""
+                "en": "CABLE O-NECK KNITTED PULLOVER"
             },
             "images": [
                 "https://vm-images-test.global.ssl.fastly.net/10183605/2576554/003/veromoda-vmnostrikketcardigan-graa.jpg?v=93d0e57daca02e5323b0a94fdcd8abb1",
@@ -44,7 +44,7 @@
             ],
             "name": {
                 "dk": "O-NECK MINI DRESS",
-                "en": ""
+                "en": "O-NECK MINI DRESS"
             },
             "images": [
                 "https://vm-images-test.global.ssl.fastly.net/10305319/4435125/003/veromoda-vmmerlekortkjole-roed.jpg?v=e22cde4b3e9d94256a6dd5b74ac7fd94",
